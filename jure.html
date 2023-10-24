@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PDA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+       <!-- banner section start  -->
+       <section>
+        <div class="banner-nomination">
+            <div class="container">
+                <div class="home-banner-wrapper">
+                    <div class="banner-quote-home">
+                        <h3>Print Design Awards 2023 is open to register!</h3>
+                        <p>24 Dec. 2023 @ Club O7</p>
+                    </div>
+                    <div class="home-banner-trophy">
+                        <img src="Images/Trophy.png" alt="Home banner trophy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner section End  -->
+
+    <!-- header section start  -->
+    <div class="header-wrapper">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo"><img src="Images/logo.svg" alt="LOGO"></div>
+          <div class="push-left">
+            <button id="menu-toggler" data-class="menu-active" class="hamburger">
+              <span class="hamburger-line hamburger-line-top"></span>
+              <span class="hamburger-line hamburger-line-middle"></span>
+              <span class="hamburger-line hamburger-line-bottom"></span>
+            </button>
+        
+            <!--  Menu compatible with wp_nav_menu  -->
+            <ul id="primary-menu" class="menu nav-menu">
+              <li class="menu-item current-menu-item"><a class="nav__link"  href="index.html">Home</a></li>
+              <li class="menu-item current-menu-item"><a class="nav__link"  href="/about.html">About us</a></li>
+
+              <li class="menu-item dropdown"><a class="nav__link"  href="#">PDA 2023</a>
+                 <ul class="sub-nav" >
+                  <li><a class="sub-nav__link" href="nomination.html">Nomination Category</a></li>
+                  <li><a class="sub-nav__link" href="jure.html">PDA23 Jury</a></li>
+                  <li><a class="sub-nav__link" href="#">Award Destination</a></li>
+                  <li><a class="sub-nav__link" href="#">Nomination Form</a></li>
+                  <li><a class="sub-nav__link" href="#">Visitor’s Registration</a></li>
+                </ul>
+        
+              </li>
+              <li class="menu-item current-menu-item"><a class="nav__link"  href="#">Sponsors</a></li>
+              <li class="menu-item dropdown"><a class="nav__link"  href="awards.html">Past Awards</a>
+                <ul class = "sub-nav">
+                  <li><a class="sub-nav__link"  href="#">Season 01</a></li>
+                  <li><a class="sub-nav__link"  href="#">Season 02</a></li>
+                </ul>
+              </li>
+              <li class="menu-item current-menu-item"><a class="nav__link"  href="#">Contact us</a></li>
+            </ul>
+        
+        
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- header section end  -->
+    <!-- breadcrum section start  -->
+    <section>
+        <div class="breadcrum-wrapper">
+            <div class="container">
+                <a href="">Home</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <p>About us</p>
+            </div>
+        </div>
+    </section> 
+
+    <!-- jure section start  -->
+    <div class="container">
+        <div class="jure-main-wrapper">
+            <h3>Prestigious Jury of PDA 2023</h3>
+            <div class="jure-card-wrapper">
+                  <button class="modal-open" data-modal="modal-1">
+                    <div class="jure-card-body-wrapper">
+                        <img src="Images/jure1.jpg" alt="jure">
+                        <div class="jure-description">
+                            <h4>Pallav Shah</h4>
+                            <p>Founder & Design Chef
+                                Design Kettle
+                                - An Advertising Agency</p>
+                        </div>
+                    </div>
+                  </button>
+                  <button class="modal-open" data-modal="modal-2">
+                    <div class="jure-card-body-wrapper">
+                        <img src="Images/jure2.png" alt="jure">
+                        <div class="jure-description">
+                            <h4>Parag Hase</h4>
+                            <p>HOD, Department of
+                                Printing Technology
+                                & Graphic Arts</p>
+                        </div>
+                    </div>
+                  </button>
+                  <button class="modal-open" data-modal="modal-3">
+                    <div class="jure-card-body-wrapper">
+                        <img src="Images/jure1.jpg" alt="jure">
+                        <div class="jure-description">
+                            <h4>Parag Hase</h4>
+                            <p>HOD, Department of
+                                Printing Technology
+                                & Graphic Arts</p>
+                        </div>
+                    </div>
+                  </button>
+            </div>
+        </div>
+    </div>
+   
+    <div class="overlay modal-close" onclick="closeModal()"></div>
+
+    <div id="modal-1" class="modal">
+      <div class="modal-content">
+        <div class="model-inner-body-wrapper">
+            <div class="client-img">
+                <img src="Images/jure1.jpg" alt="jure">
+            </div>
+            <div class="client-content-wrapper">
+                <h2>Pallav Shah</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quaerat suscipit nam fugit doloremque blanditiis, ea eligendi, omnis molestiae optio sint possimus fuga exercitationem accusamus ipsam laudantium nesciunt voluptatum? Officia!</p>
+            </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    
+    <div id="modal-2" class="modal">
+      <div class="modal-content">
+        <h1>Modal 2</h1>
+      </div>
+      <div class="modal-actions">
+        <button class="modal-close">Close me!</button>
+      </div>
+    </div>
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+          <h1>Modal 3</h1>
+        </div>
+        <div class="modal-actions">
+          <button class="modal-close">Close me!</button>
+        </div>
+      </div>
+ <!-- jure section end  -->
+
+    <!-- footer section start  -->
+    <section>
+        <footer>
+            <p>Crafted by Design Kettle</p>
+        </footer>
+    </section>
+    <!-- footer section End  -->
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+	$(".modal-open").click(function () {
+		var modalId = $(this).attr("data-modal");
+		$(".modal").removeClass("active");
+    $(".overlay").addClass("active");
+		$("#"+modalId).addClass("active");
+	});
+  
+  $(".modal-close").click(function () {
+    $(".overlay").removeClass("active");
+    $(".modal").removeClass("active");
+  });
+});
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+  // Toggle menu on click
+  $("#menu-toggler").click(function() {
+    toggleBodyClass("menu-active");
+  });
+
+  function toggleBodyClass(className) {
+    document.body.classList.toggle(className);
+  }
+
+ });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+  $('#primary-menu li .nav__link').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+});
+});
+    </script>
+</body>
